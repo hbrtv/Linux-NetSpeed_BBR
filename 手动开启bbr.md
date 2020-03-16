@@ -1,4 +1,4 @@
-##After reinstall the kernel(check the kod folder)
+#After reinstall the kernel(check the kod folder)
 ##run the follow commond to enable bbr
 
 ```
@@ -47,4 +47,4 @@ echo "*               soft    nofile           1000000
 echo "ulimit -SHn 1000000">>/etc/profile
 ```
 
-##then reboot the vps####
+##then reboot the vps
