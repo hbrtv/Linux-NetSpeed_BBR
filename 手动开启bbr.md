@@ -1,5 +1,5 @@
-#After reinstall the kernel(check the kod folder)
-##run the follow commond to enable bbr
+# After reinstall the kernel(check the kod folder to see how to)
+## run the follow commond to enable bbr
 
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
@@ -40,11 +40,11 @@ net.ipv4.ip_forward = 1">>/etc/sysctl.conf
 sysctl -p
 ```
 
-##and then
+## and then
 ```
 echo "*               soft    nofile           1000000
 *               hard    nofile          1000000">/etc/security/limits.conf
 echo "ulimit -SHn 1000000">>/etc/profile
 ```
 
-##then reboot the vps
+## then reboot the vps
