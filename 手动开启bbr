@@ -1,5 +1,5 @@
-##*After reinstall the kernel(check the kod folder)*
-##*run the follow commond to enable bbr*
+##After reinstall the kernel(check the kod folder)
+##run the follow commond to enable bbr
 
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
