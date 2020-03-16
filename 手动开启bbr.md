@@ -4,7 +4,7 @@
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
-sed -i '/fs.file-max/d' /etc/sysctl.conf
+	sed -i '/fs.file-max/d' /etc/sysctl.conf
 	sed -i '/fs.inotify.max_user_instances/d' /etc/sysctl.conf
 	sed -i '/net.ipv4.tcp_syncookies/d' /etc/sysctl.conf
 	sed -i '/net.ipv4.tcp_fin_timeout/d' /etc/sysctl.conf
