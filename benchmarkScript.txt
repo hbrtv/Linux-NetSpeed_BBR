@@ -3,3 +3,6 @@ curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
 wget -qO- bench.sh | bash
 
 wget -qO- git.io/superbench.sh | bash
+
+#test network download upload from Mainland China
+wget -qO- https://git.io/Jvh0J | bash
