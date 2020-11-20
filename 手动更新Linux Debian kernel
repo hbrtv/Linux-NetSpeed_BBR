@@ -30,3 +30,4 @@ apt-get -t stretch-backports install linux-image-4.19.0-0.bpo.8-amd64 linux-head
   
 4.重启
   sudo reboot
+```
