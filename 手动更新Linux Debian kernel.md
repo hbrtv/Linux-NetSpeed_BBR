@@ -1,3 +1,5 @@
+# 对于debian系统
+```
 echo "deb http://ftp.debian.org/debian stretch-backports main" | tee -a /etc/apt/sources.list > /dev/null
 apt-get update
 apt-get install aptitude
@@ -9,7 +11,7 @@ apt-get -t stretch-backports upgrade
 
 需要使用：
 apt-get -t stretch-backports install linux-image-4.19.0-0.bpo.8-amd64 linux-headers-4.19.0-0.bpo.8-amd64 firmware-linux-free
-
+```
 
 # 对于Ubuntu系统，将内核版本升级到4.19的方法：
 
