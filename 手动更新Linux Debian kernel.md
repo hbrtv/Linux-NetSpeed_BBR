@@ -1,3 +1,6 @@
+# 参考网址
+[秋水逸冰](https://teddysun.com/489.html)
+
 # 对于debian系统
 ```
 echo "deb http://ftp.debian.org/debian stretch-backports main" | tee -a /etc/apt/sources.list > /dev/null
