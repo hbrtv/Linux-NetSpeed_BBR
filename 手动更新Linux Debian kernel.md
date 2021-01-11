@@ -12,8 +12,20 @@ apt-get -t stretch-backports upgrade
 #对于dp0-9 以下方法不可用，提示dp0-9 uninstallable
 #apt-get install -t stretch-backports linux-image-amd64 linux-headers-amd64
 
-需要使用：
+#需要使用：
 apt-get -t stretch-backports install linux-image-4.19.0-0.bpo.8-amd64 linux-headers-4.19.0-0.bpo.8-amd64 firmware-linux-free
+
+#卸载多余内核：
+dpkg --get-selections| grep linux-image  //查看已安装的内核
+
+apt-get remove linux-image-4.9.0-12-amd64   //删除不需要的内核
+
+sudo apt install -t stretch-backports libsqlite3-0
+sudo apt install -t stretch-backports sqlite3 libsqlite3-dev
+sudo apt install -t stretch-backports libsnmp-dev
+
+
+shutdown -r now
 ```
 
 # 对于Ubuntu系统，将内核版本升级到4.19的方法：
