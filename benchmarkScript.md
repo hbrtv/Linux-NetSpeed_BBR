@@ -9,3 +9,6 @@ wget -qO- git.io/superbench.sh | bash
 
 #test network download upload from Mainland China
 wget -qO- https://git.io/Jvh0J | bash
+
+#webpage for upload and download and delay
+wget https://github.com/zhanghanyun/speedtest-rs/releases/download/v1.0.1/speedtest-rs-linux-amd64.zip && unzip speedtest-rs-linux-amd64.zip && chmod +x speedtest-rs && ./speedtest-rs
