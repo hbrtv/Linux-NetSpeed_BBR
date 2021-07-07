@@ -6,6 +6,10 @@
     wget -qO- bench.sh | bash
 
     wget -qO- git.io/superbench.sh | bash
+    
+    wget -qO- git.io/besttrace | bash
+    
+    curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh |bash
 
 #test network download upload from Mainland China
 
