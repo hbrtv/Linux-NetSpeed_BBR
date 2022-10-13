@@ -7,10 +7,17 @@ echo "deb http://ftp.debian.org/debian stretch-backports main" | tee -a /etc/apt
 apt-get update
 apt-get install aptitude
 aptitude search linux-image
+
+debian 9
 apt-get -t stretch-backports upgrade
+
+debian 11
+apt-get -t bullseye-backports upgrade
 
 #对于dp0-9 以下方法不可用，提示dp0-9 uninstallable
 #apt-get install -t stretch-backports linux-image-amd64 linux-headers-amd64
+#对于debian 11
+apt install -t bullseye-backports linux-image-amd64 linux-headers-amd64
 
 #需要使用：
 apt-get -t stretch-backports install linux-image-4.19.0-0.bpo.8-amd64 linux-headers-4.19.0-0.bpo.8-amd64 firmware-linux-free
